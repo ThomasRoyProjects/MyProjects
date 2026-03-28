@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Roy | Software Projects</title>
+    <meta name="description" content="Thomas Roy's software portfolio featuring Python, Java, analytics, automation, and internal tooling projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#top">
+                <span class="brand-mark">TR</span>
+                <span class="brand-copy">
+                    <strong>Thomas Roy</strong>
+                    <span>Software portfolio</span>
+                </span>
+            </a>
+            <nav class="site-nav">
+                <a href="#work">Projects</a>
+                <a href="#focus">Focus</a>
+                <a href="mailto:thomasroy149@protonmail.com" class="nav-cta">Contact</a>
+            </nav>
+        </header>
+
+        <main id="top">
+            <section class="hero">
+                <div class="hero-copy reveal">
+                    <p class="eyebrow">Software Portfolio</p>
+                    <h1>Selected Projects</h1>
+                    <p class="hero-text">
+                        Most of my recent work has been around messy exports, repeatable automation, backend-heavy builds, and local tools that make admin work less fragile.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#work" class="button button-primary">Browse projects</a>
+                        <a href="https://github.com/ThomasRoyProjects" class="button button-secondary" target="_blank" rel="noreferrer">Open GitHub</a>
+                    </div>
+                    <dl class="hero-stats">
+                        <div>
+                            <dt>Working with</dt>
+                            <dd>Python, Java, SQL</dd>
+                        </div>
+                        <div>
+                            <dt>Latest work</dt>
+                            <dd>Internal tools + workflow cleanup</dd>
+                        </div>
+                        <div>
+                            <dt>Current spotlight</dt>
+                            <dd id="spotlight-label">Workflow automation</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="feature-panel">
+                        <div class="feature-panel-header">
+                            <span>Featured project</span>
+                            <span id="spotlight-code">PIPE-01</span>
+                        </div>
+                        <div class="spotlight-media">
+                            <img id="spotlight-image" src="images/pipeline_preview.png" alt="Pipeline project preview">
+                        </div>
+                        <div class="spotlight-card">
+                            <p class="spotlight-kicker">Featured build</p>
+                            <h2 id="spotlight-title">Pipeline</h2>
+                            <p id="spotlight-text">
+                                YAML-driven record processing system for messy CSV exports with local UI, configurable stages, and review-ready outputs.
+                            </p>
+                            <a id="spotlight-link" href="https://github.com/ThomasRoyProjects/csv-record-pipeline" target="_blank" rel="noreferrer">Open repository</a>
+                        </div>
+                        <ul class="feature-list" aria-hidden="true">
+                            <li>normalize raw exports</li>
+                            <li>match records and resolve duplicates</li>
+                            <li>segment results for review</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section" id="work">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Public work log</p>
+                    <h2>Projects</h2>
+                    <p>
+                        Public repositories that best show how I build tools, clean data, and structure backend-heavy work.
+                    </p>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card project-card-feature reveal">
+                        <div class="project-media">
+                            <img src="images/pipeline_preview.png" alt="Pipeline project preview">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>pandas</span>
+                                <span>YAML</span>
+                                <span>Local UI</span>
+                            </div>
+                            <h3>Pipeline / CSV Record Pipeline</h3>
+                            <p>
+                                Local workflow engine for messy CSV exports with normalization, matching, enrichment, scoring, and export stages.
+                                Built to replace one-off spreadsheet work with something repeatable.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/ThomasRoyProjects/csv-record-pipeline" target="_blank" rel="noreferrer">View repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card project-card-fundraising reveal">
+                        <div class="project-media">
+                            <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard preview">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Streamlit</span>
+                                <span>Electron</span>
+                            </div>
+                            <h3>Fundraising Intelligence</h3>
+                            <p>Local analytics dashboard for NationBuilder transaction exports with donor segmentation, contribution-limit tracking, and exportable targeting lists.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" target="_blank" rel="noreferrer">View repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-media">
+                            <img src="images/image4.png" alt="Spring Boot webstore preview">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                            </div>
+                            <h3>Example Spring Boot Webstore</h3>
+                            <p>Java web application with server-rendered views, database persistence, security, and Docker-based local deployment.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore" target="_blank" rel="noreferrer">View repo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="focus-section" id="focus">
+                <div class="section-heading reveal">
+                    <p class="eyebrow">Operator notes</p>
+                    <h2>What I’m best at</h2>
+                </div>
+                <div class="focus-grid">
+                    <article class="focus-card reveal">
+                        <h3>Workflow automation</h3>
+                        <p>I like turning repetitive admin and spreadsheet work into tools that are easier to run and harder to break.</p>
+                    </article>
+                    <article class="focus-card reveal">
+                        <h3>Data-heavy tooling</h3>
+                        <p>A lot of my strongest work involves imports, matching, validation, segmentation, reporting, and cleaning up inconsistent source data.</p>
+                    </article>
+                    <article class="focus-card reveal">
+                        <h3>What I use most</h3>
+                        <p>Most of my recent work has been in Python, Java, SQL, Streamlit, Spring Boot, Git, Docker, and database-backed applications.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>Looking for junior software, backend, or internal tools roles.</p>
+            <p>© 2026 Thomas Roy. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="hero.js"></script>
+</body>
+</html>
