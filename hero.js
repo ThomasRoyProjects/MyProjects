@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
             code: "PIPE-01",
             image: "images/pipeline_preview.png",
             alt: "Pipeline project preview",
+            imagePosition: "center center",
+            imageScale: "scale(1)",
             bullets: [
                 "normalize raw exports",
                 "match records and resolve duplicates",
@@ -33,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
             code: "FUND-02",
             image: "images/fundraising_dashboard_preview.png",
             alt: "Fundraising Intelligence dashboard preview",
+            imagePosition: "left center",
+            imageScale: "scale(1.08)",
             bullets: [
                 "analyze donation exports",
                 "track segments and contribution patterns",
@@ -48,6 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
             code: "JAVA-03",
             image: "images/image4.png",
             alt: "Spring Boot webstore preview",
+            imagePosition: "center center",
+            imageScale: "scale(1)",
             bullets: [
                 "server-rendered storefront pages",
                 "database-backed product flows",
@@ -65,6 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         spotlightImage.src = project.image;
         spotlightImage.alt = project.alt;
+        spotlightImage.style.objectPosition = project.imagePosition || "center center";
+        spotlightImage.style.transform = project.imageScale || "scale(1)";
         spotlightTitle.textContent = project.title;
         spotlightText.textContent = project.text;
         spotlightLink.href = project.link;
