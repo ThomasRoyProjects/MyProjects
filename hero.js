@@ -44,12 +44,29 @@ document.addEventListener("DOMContentLoaded", () => {
             ]
         },
         {
+            title: "TransparencyBC",
+            text: "Public-records search platform with AI-assisted summaries, OCR-backed document processing, and fast full-text search. Live beta demo available.",
+            link: "https://transparancybc.com",
+            cta: "Open live demo",
+            label: "Search platforms",
+            code: "FOI-03",
+            image: "images/transparencybc_search.png",
+            alt: "TransparencyBC search interface preview",
+            imagePosition: "center center",
+            imageScale: "scale(1)",
+            bullets: [
+                "search FOI records and source documents",
+                "surface AI-assisted summaries",
+                "support demo access for review"
+            ]
+        },
+        {
             title: "Spring Boot Webstore",
             text: "A Java web application with persistence, security, server-rendered views, and Docker-based local setup.",
             link: "https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore",
             cta: "Open repository",
             label: "Backend applications",
-            code: "JAVA-03",
+            code: "JAVA-04",
             image: "images/image4.png",
             alt: "Spring Boot webstore preview",
             imagePosition: "center center",
