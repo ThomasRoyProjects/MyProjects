@@ -1,140 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const featurePanel = document.querySelector(".feature-panel");
-    const spotlightImage = document.getElementById("spotlight-image");
-    const spotlightTitle = document.getElementById("spotlight-title");
-    const spotlightText = document.getElementById("spotlight-text");
-    const spotlightLink = document.getElementById("spotlight-link");
-    const spotlightLabel = document.getElementById("spotlight-label");
-    const spotlightCode = document.getElementById("spotlight-code");
-    const featureList = document.querySelector(".feature-list");
 
-    const spotlightProjects = [
-        {
-            title: "Pipeline",
-            text: "A local workflow system for messy CSV exports, configurable processing steps, and review-ready outputs.",
-            link: "https://github.com/ThomasRoyProjects/csv-record-pipeline",
-            cta: "Open repository",
-            label: "Workflow automation",
-            code: "PIPE-01",
-            image: "images/pipeline_preview.png",
-            alt: "Pipeline project preview",
-            imagePosition: "center center",
-            imageScale: "scale(1)",
-            bullets: [
-                "normalize raw exports",
-                "match records and resolve duplicates",
-                "segment results for review"
-            ]
-        },
-        {
-            title: "Fundraising Intelligence",
-            text: "A local dashboard for donation exports, donor segmentation, and campaign-style targeting work.",
-            link: "https://github.com/ThomasRoyProjects/Fundraising_Intelligence",
-            cta: "Open repository",
-            label: "Dashboards",
-            code: "FUND-02",
-            image: "images/fundraising_dashboard_preview.png",
-            alt: "Fundraising Intelligence dashboard preview",
-            imagePosition: "left center",
-            imageScale: "scale(1.08)",
-            bullets: [
-                "analyze donation exports",
-                "track segments and contribution patterns",
-                "build targeting lists for outreach"
-            ]
-        },
-        {
-            title: "TransparencyBC",
-            text: "Public-records search platform with AI-assisted summaries, OCR-backed document processing, and fast full-text search. Live beta demo available.",
-            link: "https://transparancybc.com",
-            cta: "Open live demo",
-            label: "Search platforms",
-            code: "FOI-03",
-            image: "images/transparencybc_search.png",
-            alt: "TransparencyBC search interface preview",
-            imagePosition: "center center",
-            imageScale: "scale(1)",
-            bullets: [
-                "search FOI records and source documents",
-                "surface AI-assisted summaries",
-                "support demo access for review"
-            ]
-        },
-        {
-            title: "Spring Boot Webstore",
-            text: "A Java web application with persistence, security, server-rendered views, and Docker-based local setup.",
-            link: "https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore",
-            cta: "Open repository",
-            label: "Backend applications",
-            code: "JAVA-04",
-            image: "images/image4.png",
-            alt: "Spring Boot webstore preview",
-            imagePosition: "center center",
-            imageScale: "scale(1)",
-            bullets: [
-                "server-rendered storefront pages",
-                "database-backed product flows",
-                "security and Docker-based setup"
-            ]
-        }
-    ];
+    /* ── NAV: add background on scroll ─────────────── */
+    const nav = document.getElementById("nav");
 
-    let spotlightIndex = 0;
+    const onScroll = () => {
+        nav.classList.toggle("is-scrolled", window.scrollY > 20);
+    };
 
-    function renderSpotlight(project) {
-        if (!spotlightImage || !spotlightTitle || !spotlightText || !spotlightLink || !spotlightLabel || !spotlightCode || !featureList) {
-            return;
-        }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
 
-        spotlightImage.src = project.image;
-        spotlightImage.alt = project.alt;
-        spotlightImage.style.objectPosition = project.imagePosition || "center center";
-        spotlightImage.style.transform = project.imageScale || "scale(1)";
-        spotlightTitle.textContent = project.title;
-        spotlightText.textContent = project.text;
-        spotlightLink.href = project.link;
-        spotlightLink.textContent = project.cta;
-        spotlightLabel.textContent = project.label;
-        spotlightCode.textContent = project.code;
-        featureList.innerHTML = project.bullets.map((bullet) => `<li>${bullet}</li>`).join("");
-    }
 
-    function cycleSpotlight() {
-        spotlightIndex = (spotlightIndex + 1) % spotlightProjects.length;
-        if (!featurePanel) {
-            renderSpotlight(spotlightProjects[spotlightIndex]);
-            return;
-        }
-
-        featurePanel.classList.add("is-transitioning");
-        window.setTimeout(() => {
-            renderSpotlight(spotlightProjects[spotlightIndex]);
-        }, 180);
-        window.setTimeout(() => {
-            featurePanel.classList.remove("is-transitioning");
-        }, 360);
-    }
-
-    renderSpotlight(spotlightProjects[spotlightIndex]);
-    window.setInterval(cycleSpotlight, 4200);
-
-    const revealTargets = document.querySelectorAll(".reveal");
+    /* ── REVEAL: scroll-triggered fade-in ──────────── */
+    const revealEls = document.querySelectorAll(".reveal");
 
     if ("IntersectionObserver" in window) {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
+                    if (!entry.isIntersecting) return;
+
+                    const delay = parseInt(entry.target.dataset.delay || "0", 10);
+
+                    setTimeout(() => {
                         entry.target.classList.add("is-visible");
-                        observer.unobserve(entry.target);
-                    }
+                    }, delay);
+
+                    observer.unobserve(entry.target);
                 });
             },
-            { threshold: 0.16 }
+            { threshold: 0.1, rootMargin: "0px 0px -48px 0px" }
         );
 
-        revealTargets.forEach((target) => observer.observe(target));
+        revealEls.forEach((el) => observer.observe(el));
     } else {
-        revealTargets.forEach((target) => target.classList.add("is-visible"));
+        revealEls.forEach((el) => el.classList.add("is-visible"));
     }
+
 });

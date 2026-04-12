@@ -3,208 +3,263 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Roy | Software Projects</title>
-    <meta name="description" content="Thomas Roy's software portfolio featuring Python, TypeScript, React, analytics, automation, and internal tooling projects.">
+    <title>Thomas Roy — Software Engineer</title>
+    <meta name="description" content="Thomas Roy builds backend tools, search products, and workflow automation. Python, TypeScript, React, PostgreSQL.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="page-shell">
-        <header class="site-header">
-            <a class="brand" href="#top">
-                <span class="brand-mark">TR</span>
-                <span class="brand-copy">
-                    <strong>Thomas Roy</strong>
-                    <span>Software portfolio</span>
-                </span>
-            </a>
-            <nav class="site-nav">
-                <a href="#work">Projects</a>
-                <a href="#focus">Focus</a>
+
+    <!-- ── NAV ──────────────────────────────────────────── -->
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo">TR</a>
+            <nav class="nav-links">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#stack" class="nav-link">Stack</a>
                 <a href="mailto:thomasroy149@protonmail.com" class="nav-cta">Contact</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main id="top">
-            <section class="hero">
-                <div class="hero-copy reveal">
-                    <p class="eyebrow">Software Portfolio</p>
-                    <h1>Selected Projects</h1>
-                    <p class="hero-text">
-                        Most of my recent work has been around messy exports, repeatable automation, backend-heavy builds, and local tools that make admin work less fragile.
+    <main>
+
+        <!-- ── HERO ─────────────────────────────────────── -->
+        <section class="hero" id="top">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <p class="hero-label reveal" data-delay="0">Software Engineer</p>
+                    <h1 class="hero-name reveal" data-delay="80">Thomas<br>Roy</h1>
+                    <p class="hero-desc reveal" data-delay="160">
+                        Backend-heavy tools, search products, and workflow automation
+                        that hold up outside a demo.
                     </p>
-                    <div class="hero-actions">
-                        <a href="#work" class="button button-primary">Browse projects</a>
-                        <a href="https://github.com/ThomasRoyProjects" class="button button-secondary" target="_blank" rel="noreferrer">Open GitHub</a>
+                    <div class="hero-actions reveal" data-delay="240">
+                        <a href="#work" class="btn btn-primary">See the work</a>
+                        <a href="https://github.com/ThomasRoyProjects" class="btn btn-ghost" target="_blank" rel="noreferrer">GitHub</a>
                     </div>
-                    <dl class="hero-stats">
-                        <div>
-                            <dt>Working with</dt>
-                            <dd>Python, TypeScript, React</dd>
-                        </div>
-                        <div>
-                            <dt>Latest work</dt>
-                            <dd>Search platforms + internal tools</dd>
-                        </div>
-                        <div>
-                            <dt>Current spotlight</dt>
-                            <dd id="spotlight-label">Workflow automation</dd>
-                        </div>
-                    </dl>
                 </div>
 
-                <div class="hero-visual reveal">
-                    <div class="feature-panel">
-                        <div class="feature-panel-header">
-                            <span>Featured project</span>
-                            <span id="spotlight-code">PIPE-01</span>
-                        </div>
-                        <div class="spotlight-media">
-                            <img id="spotlight-image" src="images/pipeline_preview.png" alt="Pipeline project preview">
-                        </div>
-                        <div class="spotlight-card">
-                            <p class="spotlight-kicker">Featured build</p>
-                            <h2 id="spotlight-title">Pipeline</h2>
-                            <p id="spotlight-text">
-                                YAML-driven record processing system for messy CSV exports with local UI, configurable stages, and review-ready outputs.
-                            </p>
-                            <a id="spotlight-link" href="https://github.com/ThomasRoyProjects/csv-record-pipeline" target="_blank" rel="noreferrer">Open repository</a>
-                        </div>
-                        <ul class="feature-list" aria-hidden="true">
-                            <li>normalize raw exports</li>
-                            <li>match records and resolve duplicates</li>
-                            <li>segment results for review</li>
+                <aside class="hero-meta reveal" data-delay="320">
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">4</span>
+                        <span class="hero-stat-label">Projects shipped</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">5+</span>
+                        <span class="hero-stat-label">Languages &amp; frameworks</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">&#8734;</span>
+                        <span class="hero-stat-label">Messy CSVs processed</span>
+                    </div>
+                </aside>
+            </div>
+
+            <a href="#work" class="hero-scroll-hint reveal" data-delay="400">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </a>
+        </section>
+
+        <!-- ── PROJECTS ──────────────────────────────────── -->
+        <section class="projects" id="work">
+            <div class="projects-header reveal">
+                <p class="section-label">Selected work</p>
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <!-- 01 TransparencyBC -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-num">01</span>
+                    <span class="project-category">Search platforms</span>
+                </div>
+                <div class="project-layout">
+                    <div class="project-image-wrap">
+                        <img src="images/transparencybc_search.png" alt="TransparencyBC search interface" class="project-img">
+                        <span class="project-image-tag">Live beta</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">TransparencyBC</h3>
+                        <p class="project-desc">
+                            FOI search platform with AI-assisted summaries, OCR-backed document
+                            processing, and full-text search across public-records material.
+                            Demo login available.
+                        </p>
+                        <ul class="project-list">
+                            <li>Full-text search across FOI document corpus</li>
+                            <li>AI-generated summaries per document</li>
+                            <li>OCR pipeline for scanned records</li>
                         </ul>
+                        <p class="project-stack">Python · TypeScript · React · PostgreSQL · Typesense</p>
+                        <div class="project-links">
+                            <a href="https://transparencybc.com/" class="project-link" target="_blank" rel="noreferrer">Live demo &#8594;</a>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="projects-section" id="work">
-                <div class="section-heading reveal">
-                    <p class="eyebrow">Selected work</p>
-                    <h2>Projects</h2>
-                    <p>
-                        Public repositories that best show how I build tools, clean data, and structure backend-heavy work.
-                    </p>
+            <!-- 02 Pipeline -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-num">02</span>
+                    <span class="project-category">Workflow automation</span>
                 </div>
-
-                <div class="project-grid">
-                    <article class="project-card project-card-feature reveal">
-                        <div class="project-media">
-                            <img src="images/pipeline_preview.png" alt="Pipeline project preview">
+                <div class="project-layout project-layout-flip">
+                    <div class="project-image-wrap">
+                        <img src="images/pipeline_preview.png" alt="Pipeline project preview" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Pipeline</h3>
+                        <p class="project-desc">
+                            YAML-driven workflow engine for messy CSV exports. Configurable steps
+                            for matching, enrichment, scoring, and producing review-ready outputs.
+                        </p>
+                        <ul class="project-list">
+                            <li>Normalize raw exports from any source</li>
+                            <li>Match records and resolve duplicates</li>
+                            <li>Segment results for review workflows</li>
+                        </ul>
+                        <p class="project-stack">Python · pandas · YAML · local UI</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ThomasRoyProjects/csv-record-pipeline" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>pandas</span>
-                                <span>YAML</span>
-                                <span>Local UI</span>
-                            </div>
-                            <h3>Pipeline / CSV Record Pipeline</h3>
-                            <p>
-                                Local workflow engine for messy CSV exports with normalization, matching, enrichment, scoring, and export stages.
-                                Built to replace one-off spreadsheet work with something repeatable.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/ThomasRoyProjects/csv-record-pipeline" target="_blank" rel="noreferrer">View repo</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <div class="project-media">
-                            <img src="images/transparencybc_search.png" alt="TransparencyBC search interface preview">
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>TypeScript</span>
-                                <span>React</span>
-                                <span>PostgreSQL</span>
-                                <span>Typesense</span>
-                            </div>
-                            <h3>TransparencyBC</h3>
-                            <p>
-                                Public-records search platform for exploring FOI material with AI-assisted summaries, OCR-backed document workflows, and fast full-text search.
-                                Live beta demo is available, and demo login access is available.
-                            </p>
-                            <div class="project-gallery">
-                                <img src="images/transparencybc_summary.png" alt="TransparencyBC AI summary view">
-                                <img src="images/transparencybc_viewer.png" alt="TransparencyBC protected PDF viewer">
-                            </div>
-                            <div class="project-links">
-                                <a href="https://transparancybc.com" target="_blank" rel="noreferrer">View live demo</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card project-card-fundraising reveal">
-                        <div class="project-media">
-                            <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard preview">
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>Streamlit</span>
-                                <span>Electron</span>
-                            </div>
-                            <h3>Fundraising Intelligence</h3>
-                            <p>Local analytics dashboard for NationBuilder transaction exports with donor segmentation, contribution-limit tracking, and exportable targeting lists.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" target="_blank" rel="noreferrer">View repo</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-card reveal">
-                        <div class="project-media">
-                            <img src="images/image4.png" alt="Spring Boot webstore preview">
-                        </div>
-                        <div class="project-body">
-                            <div class="project-tags">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>MySQL</span>
-                            </div>
-                            <h3>Example Spring Boot Webstore</h3>
-                            <p>Java web application with server-rendered views, database persistence, security, and Docker-based local deployment.</p>
-                            <div class="project-links">
-                                <a href="https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore" target="_blank" rel="noreferrer">View repo</a>
-                            </div>
-                        </div>
-                    </article>
+                    </div>
                 </div>
-            </section>
+            </article>
 
-            <section class="focus-section" id="focus">
-                <div class="section-heading reveal">
-                    <p class="eyebrow">Focus</p>
-                    <h2>What I’m best at</h2>
+            <!-- 03 Fundraising Intelligence -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-num">03</span>
+                    <span class="project-category">Dashboards</span>
                 </div>
-                <div class="focus-grid">
-                    <article class="focus-card reveal">
-                        <h3>Workflow automation</h3>
-                        <p>I like turning repetitive admin and spreadsheet work into tools that are easier to run and harder to break.</p>
-                    </article>
-                    <article class="focus-card reveal">
-                        <h3>Data-heavy tooling</h3>
-                        <p>A lot of my strongest work involves imports, matching, validation, segmentation, reporting, and cleaning up inconsistent source data.</p>
-                    </article>
-                    <article class="focus-card reveal">
-                        <h3>What I use most</h3>
-                        <p>Most of my recent work has been in Python, TypeScript, React, PostgreSQL, Typesense, Streamlit, Git, Docker, and database-backed applications.</p>
-                    </article>
+                <div class="project-layout">
+                    <div class="project-image-wrap">
+                        <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Fundraising Intelligence</h3>
+                        <p class="project-desc">
+                            Local analytics dashboard for NationBuilder exports. Donor segmentation,
+                            contribution-limit tracking, and targeting workflows built for real
+                            campaign use.
+                        </p>
+                        <ul class="project-list">
+                            <li>Analyze donation exports and giving patterns</li>
+                            <li>Track segments and contribution limits</li>
+                            <li>Build targeting lists for outreach</li>
+                        </ul>
+                        <p class="project-stack">Python · Streamlit · Electron</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>
+            </article>
 
-        <footer class="site-footer">
-            <p>Looking for junior software, backend, or internal tools roles.</p>
-            <p>© 2026 Thomas Roy. All rights reserved.</p>
-        </footer>
-    </div>
+            <!-- 04 Spring Boot Webstore -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-num">04</span>
+                    <span class="project-category">Backend applications</span>
+                </div>
+                <div class="project-layout project-layout-flip">
+                    <div class="project-image-wrap">
+                        <img src="images/image4.png" alt="Spring Boot webstore preview" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Spring Boot Webstore</h3>
+                        <p class="project-desc">
+                            Java web application with server-rendered views, database persistence,
+                            Spring Security, and Docker-based local deployment. Built as a reference
+                            for production-grade Java web patterns.
+                        </p>
+                        <ul class="project-list">
+                            <li>Server-rendered storefront and product pages</li>
+                            <li>Database-backed product and order flows</li>
+                            <li>Spring Security with Docker-based setup</li>
+                        </ul>
+                        <p class="project-stack">Java · Spring Boot · MySQL · Docker</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- ── STACK ─────────────────────────────────────── -->
+        <section class="stack-section" id="stack">
+            <div class="stack-inner reveal">
+                <p class="section-label">Core stack</p>
+                <div class="stack-grid">
+                    <div class="stack-group">
+                        <p class="stack-group-label">Languages</p>
+                        <div class="stack-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <p class="stack-group-label">Frontend</p>
+                        <div class="stack-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Electron</span>
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <p class="stack-group-label">Backend &amp; Data</p>
+                        <div class="stack-tags">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Typesense</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">pandas</span>
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <p class="stack-group-label">Infrastructure</p>
+                        <div class="stack-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">YAML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CONTACT ───────────────────────────────────── -->
+        <section class="contact-section">
+            <div class="contact-inner reveal">
+                <p class="section-label">What's next</p>
+                <h2 class="contact-title">Open to the<br>right role.</h2>
+                <p class="contact-desc">
+                    Backend, internal tools, and software engineering positions.
+                    If you're building something that needs to hold up under real load,
+                    let's talk.
+                </p>
+                <a href="mailto:thomasroy149@protonmail.com" class="btn btn-primary btn-large">Get in touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ── FOOTER ───────────────────────────────────────── -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <span class="footer-brand">Thomas Roy</span>
+            <span class="footer-copy">&#169; 2026</span>
+            <a href="https://github.com/ThomasRoyProjects" class="footer-link" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+    </footer>
 
     <script src="hero.js"></script>
 </body>
