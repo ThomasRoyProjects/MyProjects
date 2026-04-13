@@ -365,13 +365,25 @@ a {
 
 /* Individual project row */
 .project {
+    position: relative;
     border-bottom: 1px solid var(--line);
     padding: 56px 0;
-    transition: box-shadow 0.3s var(--ease-out);
 }
 
-.project:hover {
-    box-shadow: inset 3px 0 0 var(--accent);
+.project::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity 0.3s var(--ease-out);
+}
+
+.project:hover::before {
+    opacity: 1;
 }
 
 .project-meta {
