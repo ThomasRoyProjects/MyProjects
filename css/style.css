@@ -286,18 +286,9 @@ a {
 
 .hero-feature-list div {
     display: grid;
-    grid-template-columns: auto 1fr;
-    column-gap: 12px;
-    row-gap: 2px;
+    gap: 2px;
     padding-top: 14px;
     border-top: 1px solid var(--line);
-}
-
-.hero-feature-list span {
-    grid-row: span 2;
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--accent);
 }
 
 .hero-feature-list strong {
