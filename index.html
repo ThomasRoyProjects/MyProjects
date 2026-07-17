@@ -20,6 +20,7 @@
             <nav class="nav-links">
                 <a href="#work" class="nav-link">Work</a>
                 <a href="#stack" class="nav-link">Stack</a>
+                <a href="resume/Thomas_Roy_Resume.pdf" class="nav-link" target="_blank" rel="noreferrer">Resume</a>
                 <a href="mailto:thomasroy149@protonmail.com" class="nav-cta">Contact</a>
             </nav>
         </div>
@@ -31,98 +32,108 @@
         <section class="hero" id="top">
             <div class="hero-inner">
                 <div class="hero-text">
-                    <p class="hero-label reveal" data-delay="0">Software Engineer</p>
                     <h1 class="hero-name reveal" data-delay="80">Thomas<br>Roy</h1>
                     <p class="hero-desc reveal" data-delay="160">
-                        Backend-heavy tools, search products, and workflow automation
-                        that hold up outside a demo.
+                        Junior software developer focused on backend/data tooling,
+                        internal workflows, and small systems that solve real operational problems.
                     </p>
                     <div class="hero-actions reveal" data-delay="240">
-                        <a href="#work" class="btn btn-primary">See the work</a>
+                        <a href="#work" class="btn btn-primary">Projects</a>
+                        <a href="resume/Thomas_Roy_Resume.pdf" class="btn btn-ghost" target="_blank" rel="noreferrer">Resume</a>
                         <a href="https://github.com/ThomasRoyProjects" class="btn btn-ghost" target="_blank" rel="noreferrer">GitHub</a>
                     </div>
                 </div>
 
-                <aside class="hero-meta reveal" data-delay="320">
-                    <div class="hero-stat">
-                        <span class="hero-stat-num">4</span>
-                        <span class="hero-stat-label">Projects shipped</span>
+                <aside class="hero-feature reveal" data-delay="280" aria-label="Project snapshot">
+                    <div class="hero-feature-top">
+                        <span>Project signals</span>
+                        <span class="hero-feature-status">Active</span>
                     </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-num">5+</span>
-                        <span class="hero-stat-label">Languages &amp; frameworks</span>
+                    <div class="hero-feature-title">Small systems that turn repeated work into something runnable.</div>
+                    <div class="hero-feature-flow" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="hero-stat">
-                        <span class="hero-stat-num">&#8734;</span>
-                        <span class="hero-stat-label">Messy CSVs processed</span>
+                    <div class="hero-feature-list">
+                        <div>
+                            <span>01</span>
+                            <strong>CSV workflows</strong>
+                            <small>clean · match · review</small>
+                        </div>
+                        <div>
+                            <span>02</span>
+                            <strong>Spring Boot</strong>
+                            <small>auth · cart · admin</small>
+                        </div>
+                        <div>
+                            <span>03</span>
+                            <strong>Search tools</strong>
+                            <small>index · filter · explore</small>
+                        </div>
                     </div>
                 </aside>
+
             </div>
 
-            <a href="#work" class="hero-scroll-hint reveal" data-delay="400">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
-            </a>
+        </section>
+
+        <!-- ── RESUME STORY ──────────────────────────────── -->
+        <section class="resume-story" id="resume-story">
+            <div class="resume-story-inner">
+                <div class="resume-story-copy reveal">
+                    <h2 class="section-title">Current focus</h2>
+                    <p>
+                        I’m interested in backend development, data tooling, and internal
+                        software for teams dealing with messy records, repeated workflows,
+                        and practical constraints.
+                    </p>
+                    <a href="resume/Thomas_Roy_Resume.pdf" class="project-link" target="_blank" rel="noreferrer">Open resume &#8594;</a>
+                </div>
+                <div class="resume-story-grid">
+                    <article class="resume-card reveal" data-delay="80">
+                        <span class="resume-card-num">01</span>
+                        <h3>Backend development</h3>
+                        <p>APIs, persistence, auth, and Java/Spring practice on small web apps.</p>
+                    </article>
+                    <article class="resume-card reveal" data-delay="160">
+                        <span class="resume-card-num">02</span>
+                        <h3>Data tooling</h3>
+                        <p>Python and pandas workflows for messy exports, matching, and review queues.</p>
+                    </article>
+                    <article class="resume-card reveal" data-delay="240">
+                        <span class="resume-card-num">03</span>
+                        <h3>Internal software</h3>
+                        <p>Dashboards and small tools built around repeated operational workflows.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <!-- ── PROJECTS ──────────────────────────────────── -->
         <section class="projects" id="work">
             <div class="projects-header reveal">
-                <p class="section-label">Selected work</p>
                 <h2 class="section-title">Projects</h2>
             </div>
 
-            <!-- 01 TransparencyBC -->
+            <!-- 01 Pipeline -->
             <article class="project reveal">
                 <div class="project-meta">
                     <span class="project-num">01</span>
-                    <span class="project-category">Search platforms</span>
                 </div>
                 <div class="project-layout">
-                    <div class="project-image-wrap">
-                        <img src="images/transparencybc_search.png" alt="TransparencyBC search interface" class="project-img">
-                        <span class="project-image-tag">Live beta</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">TransparencyBC</h3>
-                        <p class="project-desc">
-                            FOI search platform with AI-assisted summaries, OCR-backed document
-                            processing, and full-text search across public-records material.
-                            Demo login available.
-                        </p>
-                        <ul class="project-list">
-                            <li>Full-text search across FOI document corpus</li>
-                            <li>AI-generated summaries per document</li>
-                            <li>OCR pipeline for scanned records</li>
-                        </ul>
-                        <p class="project-stack">Python · TypeScript · React · PostgreSQL · Typesense</p>
-                        <div class="project-links">
-                            <a href="https://transparencybc.com/" class="project-link" target="_blank" rel="noreferrer">Live demo &#8594;</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 02 Pipeline -->
-            <article class="project reveal">
-                <div class="project-meta">
-                    <span class="project-num">02</span>
-                    <span class="project-category">Workflow automation</span>
-                </div>
-                <div class="project-layout project-layout-flip">
                     <div class="project-image-wrap">
                         <img src="images/pipeline_preview.png" alt="Pipeline project preview" class="project-img">
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Pipeline</h3>
                         <p class="project-desc">
-                            YAML-driven workflow engine for messy CSV exports. Configurable steps
-                            for matching, enrichment, scoring, and producing review-ready outputs.
+                            Python data workflow project for turning messy CSV exports
+                            into cleaner records and review-ready outputs.
                         </p>
                         <ul class="project-list">
-                            <li>Normalize raw exports from any source</li>
-                            <li>Match records and resolve duplicates</li>
-                            <li>Segment results for review workflows</li>
+                            <li>Normalize source files into consistent fields</li>
+                            <li>Match duplicates and prepare review queues</li>
                         </ul>
                         <p class="project-stack">Python · pandas · YAML · local UI</p>
                         <div class="project-links">
@@ -132,41 +143,10 @@
                 </div>
             </article>
 
-            <!-- 03 Fundraising Intelligence -->
+            <!-- 02 Spring Boot Webstore -->
             <article class="project reveal">
                 <div class="project-meta">
-                    <span class="project-num">03</span>
-                    <span class="project-category">Dashboards</span>
-                </div>
-                <div class="project-layout">
-                    <div class="project-image-wrap">
-                        <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard" class="project-img">
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Fundraising Intelligence</h3>
-                        <p class="project-desc">
-                            Local analytics dashboard for NationBuilder exports. Donor segmentation,
-                            contribution-limit tracking, and targeting workflows built for real
-                            campaign use.
-                        </p>
-                        <ul class="project-list">
-                            <li>Analyze donation exports and giving patterns</li>
-                            <li>Track segments and contribution limits</li>
-                            <li>Build targeting lists for outreach</li>
-                        </ul>
-                        <p class="project-stack">Python · Streamlit · Electron</p>
-                        <div class="project-links">
-                            <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 04 Spring Boot Webstore -->
-            <article class="project reveal">
-                <div class="project-meta">
-                    <span class="project-num">04</span>
-                    <span class="project-category">Backend applications</span>
+                    <span class="project-num">02</span>
                 </div>
                 <div class="project-layout project-layout-flip">
                     <div class="project-image-wrap">
@@ -175,18 +155,71 @@
                     <div class="project-body">
                         <h3 class="project-title">Spring Boot Webstore</h3>
                         <p class="project-desc">
-                            Java web application with server-rendered views, database persistence,
-                            Spring Security, and Docker-based local deployment. Built as a reference
-                            for production-grade Java web patterns.
+                            Java/Spring Boot web app that shows backend fundamentals:
+                            login, admin product management, cart and checkout flows, and tests.
                         </p>
                         <ul class="project-list">
-                            <li>Server-rendered storefront and product pages</li>
-                            <li>Database-backed product and order flows</li>
-                            <li>Spring Security with Docker-based setup</li>
+                            <li>Spring Security, role-separated admin routes, and server-side checkout</li>
+                            <li>Docker Compose, Flyway, GitHub Actions, and integration tests</li>
                         </ul>
-                        <p class="project-stack">Java · Spring Boot · MySQL · Docker</p>
+                        <p class="project-stack">Java 17 · Spring Boot · MySQL · Flyway · Docker · CI</p>
                         <div class="project-links">
                             <a href="https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 03 TransparencyBC -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-num">03</span>
+                </div>
+                <div class="project-layout">
+                    <div class="project-image-wrap">
+                        <img src="images/transparencybc_search.png" alt="TransparencyBC search interface" class="project-img">
+                        <span class="project-image-tag">Live beta</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">TransparencyBC</h3>
+                        <p class="project-desc">
+                            Search product for exploring public-records documents with OCR text,
+                            readable summaries, filtering, and a live interface.
+                        </p>
+                        <ul class="project-list">
+                            <li>Search and filter a document corpus</li>
+                            <li>Turn scanned records into usable text</li>
+                        </ul>
+                        <p class="project-stack">Python · TypeScript · React · PostgreSQL · Typesense</p>
+                        <div class="project-links">
+                            <a href="https://transparencybc.com/" class="project-link" target="_blank" rel="noreferrer">Visit site &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 04 Fundraising Intelligence -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-num">04</span>
+                </div>
+                <div class="project-layout project-layout-flip">
+                    <div class="project-image-wrap">
+                        <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard" class="project-img">
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">Fundraising Intelligence</h3>
+                        <p class="project-desc">
+                            Python dashboard for turning CRM exports into donor segments,
+                            contribution-limit checks, and follow-up lists.
+                        </p>
+                        <ul class="project-list">
+                            <li>Review giving patterns and recurring donors</li>
+                            <li>Build follow-up lists from exported data</li>
+                        </ul>
+                        <p class="project-stack">Python · Streamlit · Electron</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
                     </div>
                 </div>
@@ -196,7 +229,6 @@
         <!-- ── STACK ─────────────────────────────────────── -->
         <section class="stack-section" id="stack">
             <div class="stack-inner reveal">
-                <p class="section-label">Core stack</p>
                 <div class="stack-grid">
                     <div class="stack-group">
                         <p class="stack-group-label">Languages</p>
@@ -240,12 +272,11 @@
         <!-- ── CONTACT ───────────────────────────────────── -->
         <section class="contact-section">
             <div class="contact-inner reveal">
-                <p class="section-label">What's next</p>
-                <h2 class="contact-title">Open to the<br>right role.</h2>
+                <h2 class="contact-title">Useful work, real problems.</h2>
                 <p class="contact-desc">
-                    Backend, internal tools, and software engineering positions.
-                    If you're building something that needs to hold up under real load,
-                    let's talk.
+                    I like building software that makes real work easier: cleaning data,
+                    connecting systems, making things searchable, and turning repeated
+                    tasks into tools.
                 </p>
                 <a href="mailto:thomasroy149@protonmail.com" class="btn btn-primary btn-large">Get in touch</a>
             </div>
@@ -258,6 +289,7 @@
         <div class="footer-inner">
             <span class="footer-brand">Thomas Roy</span>
             <span class="footer-copy">&#169; 2026</span>
+            <a href="resume/Thomas_Roy_Resume.pdf" class="footer-link" target="_blank" rel="noreferrer">Resume</a>
             <a href="https://github.com/ThomasRoyProjects" class="footer-link" target="_blank" rel="noreferrer">GitHub</a>
         </div>
     </footer>
