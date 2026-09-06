@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas Roy — Software Engineer</title>
-    <meta name="description" content="Thomas Roy builds backend tools, search products, and workflow automation. Python, TypeScript, React, PostgreSQL.">
+    <title>Thomas Roy — Software Developer</title>
+    <meta name="description" content="Thomas Roy — Junior Software Developer. Java/Spring Boot backend development, Python data reconciliation, and local-first workflows.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -34,8 +34,8 @@
                 <div class="hero-text">
                     <h1 class="hero-name reveal" data-delay="80">Thomas<br>Roy</h1>
                     <p class="hero-desc reveal" data-delay="160">
-                        Junior software developer focused on backend/data tooling,
-                        internal workflows, and small systems that solve real operational problems.
+                        Junior software developer focused on Java/Spring backend development,
+                        record reconciliation workflows, and local-first applications with automated tests.
                     </p>
                     <div class="hero-actions reveal" data-delay="240">
                         <a href="#work" class="btn btn-primary">Projects</a>
@@ -57,16 +57,16 @@
                     </div>
                     <div class="hero-feature-list">
                         <div>
-                            <strong>CSV workflows</strong>
-                            <small>clean · match · review</small>
-                        </div>
-                        <div>
                             <strong>Spring Boot</strong>
-                            <small>auth · cart · admin</small>
+                            <small>checkout · row locks · RBAC</small>
                         </div>
                         <div>
-                            <strong>Search tools</strong>
-                            <small>index · filter · explore</small>
+                            <strong>InboxBoard</strong>
+                            <small>IMAP triage · schemas · SQLCipher</small>
+                        </div>
+                        <div>
+                            <strong>CSV Pipeline</strong>
+                            <small>normalize · match · review</small>
                         </div>
                     </div>
                 </aside>
@@ -81,27 +81,27 @@
                 <div class="resume-story-copy reveal">
                     <h2 class="section-title">Current focus</h2>
                     <p>
-                        I’m interested in backend development, data tooling, and internal
-                        software for teams dealing with messy records, repeated workflows,
-                        and practical constraints.
+                        I build robust backend systems, data reconciliation workflows,
+                        and local-first operational software designed for reliability,
+                        data integrity, and rigorous testing.
                     </p>
                     <a href="resume/Thomas_Roy_Resume.pdf" class="project-link" target="_blank" rel="noreferrer">Open resume &#8594;</a>
                 </div>
                 <div class="resume-story-grid">
                     <article class="resume-card reveal" data-delay="80">
                         <span class="resume-card-num">01</span>
-                        <h3>Backend development</h3>
-                        <p>APIs, persistence, auth, and Java/Spring practice on small web apps.</p>
+                        <h3>Backend systems</h3>
+                        <p>Java/Spring Boot APIs, transactional checkout, pessimistic row locking, and integration tests.</p>
                     </article>
                     <article class="resume-card reveal" data-delay="160">
                         <span class="resume-card-num">02</span>
-                        <h3>Data tooling</h3>
-                        <p>Python and pandas workflows for messy exports, matching, and review queues.</p>
+                        <h3>Data reconciliation</h3>
+                        <p>Python and pandas pipelines for messy exports, indexed candidate matching, and review queues.</p>
                     </article>
                     <article class="resume-card reveal" data-delay="240">
                         <span class="resume-card-num">03</span>
-                        <h3>Internal software</h3>
-                        <p>Dashboards and small tools built around repeated operational workflows.</p>
+                        <h3>Local-first tools</h3>
+                        <p>FastAPI services, SQLCipher encryption, and operational software without cloud dependencies.</p>
                     </article>
                 </div>
             </div>
@@ -113,53 +113,25 @@
                 <h2 class="section-title">Projects</h2>
             </div>
 
-            <!-- 01 Pipeline -->
+            <!-- 01 Spring Boot Webstore -->
             <article class="project reveal">
                 <div class="project-meta">
                     <span class="project-num">01</span>
                 </div>
                 <div class="project-layout">
                     <div class="project-image-wrap">
-                        <img src="images/pipeline_preview.png" alt="Pipeline project preview" class="project-img">
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Pipeline</h3>
-                        <p class="project-desc">
-                            Python data workflow project for turning messy CSV exports
-                            into cleaner records and review-ready outputs.
-                        </p>
-                        <ul class="project-list">
-                            <li>Normalize source files into consistent fields</li>
-                            <li>Match duplicates and prepare review queues</li>
-                        </ul>
-                        <p class="project-stack">Python · pandas · YAML · local UI</p>
-                        <div class="project-links">
-                            <a href="https://github.com/ThomasRoyProjects/csv-record-pipeline" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 02 Spring Boot Webstore -->
-            <article class="project reveal">
-                <div class="project-meta">
-                    <span class="project-num">02</span>
-                </div>
-                <div class="project-layout project-layout-flip">
-                    <div class="project-image-wrap">
-                        <img src="images/image4.png" alt="Spring Boot webstore preview" class="project-img">
+                        <img src="images/image4.png" alt="Spring Boot webstore order confirmation preview" class="project-img">
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Spring Boot Webstore</h3>
                         <p class="project-desc">
-                            Java/Spring Boot web app that shows backend fundamentals:
-                            login, admin product management, cart and checkout flows, and tests.
+                            Full-stack Java/Spring Boot e-commerce application demonstrating transactional checkout integrity, role-based security, and automated testing pipelines.
                         </p>
                         <ul class="project-list">
-                            <li>Spring Security, role-separated admin routes, and server-side checkout</li>
-                            <li>Docker Compose, Flyway, GitHub Actions, and integration tests</li>
+                            <li>Implemented transactional checkout with server-calculated prices, inventory row locks, and cart clearing after commit</li>
+                            <li>Added role-based access, Flyway migrations, and integration tests for price tampering and session isolation; automated tests and Docker builds in GitHub Actions</li>
                         </ul>
-                        <p class="project-stack">Java 17 · Spring Boot · MySQL · Flyway · Docker · CI</p>
+                        <p class="project-stack">Java 17 · Spring Boot · JPA · MySQL · Flyway · Docker · GitHub Actions</p>
                         <div class="project-links">
                             <a href="https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
@@ -167,54 +139,113 @@
                 </div>
             </article>
 
-            <!-- 03 TransparencyBC -->
+            <!-- 02 InboxBoard -->
+            <article class="project reveal">
+                <div class="project-meta">
+                    <span class="project-num">02</span>
+                </div>
+                <div class="project-layout project-layout-flip">
+                    <div class="project-image-wrap">
+                        <img src="images/inboxboard_preview.svg" alt="InboxBoard email-to-kanban workflow diagram" class="project-img">
+                        <span class="project-image-tag project-tag-secondary">Workflow diagram</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">InboxBoard — Email-to-Kanban Service Desk</h3>
+                        <p class="project-desc">
+                            Local-first service desk application that turns inbound email into structured Kanban cards with automated intake routing and encrypted local persistence.
+                        </p>
+                        <ul class="project-list">
+                            <li>Built an email-to-Kanban application with IMAP intake, a local FastAPI interface, and SQLCipher-encrypted storage</li>
+                            <li>Validated structured AI output against schemas and source evidence; routed high-risk or incomplete requests to human review</li>
+                        </ul>
+                        <p class="project-stack">Python · FastAPI · Pydantic · SQLCipher · IMAP</p>
+                        <div class="project-links">
+                            <a href="https://github.com/ThomasRoyProjects/ai-service-request-triage" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 03 CSV Record Pipeline -->
             <article class="project reveal">
                 <div class="project-meta">
                     <span class="project-num">03</span>
                 </div>
                 <div class="project-layout">
                     <div class="project-image-wrap">
-                        <img src="images/transparencybc_search.png" alt="TransparencyBC search interface" class="project-img">
-                        <span class="project-image-tag">Live beta</span>
+                        <img src="images/pipeline_preview.png" alt="CSV Record Pipeline workflow graph preview" class="project-img">
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">TransparencyBC</h3>
+                        <h3 class="project-title">CSV Record Pipeline</h3>
                         <p class="project-desc">
-                            Search product for exploring public-records documents with OCR text,
-                            readable summaries, filtering, and a live interface.
+                            Multi-stage data pipeline for normalizing messy CSV exports, matching duplicate candidate records across fields, and generating review queues with conflict explanations.
                         </p>
                         <ul class="project-list">
-                            <li>Search and filter a document corpus</li>
-                            <li>Turn scanned records into usable text</li>
+                            <li>Implemented indexed candidate matching, multi-field scoring, and unit-conflict checks with explanations and separate match/review outcomes</li>
+                            <li>Exposed YAML-configured jobs through CLI and local web interfaces; added end-to-end tests using 1,000-record synthetic fixtures</li>
                         </ul>
-                        <p class="project-stack">Python · TypeScript · React · PostgreSQL · Typesense</p>
+                        <p class="project-stack">Python · pandas · YAML · CLI &amp; Web UI · pytest</p>
                         <div class="project-links">
-                            <a href="https://transparencybc.com/" class="project-link" target="_blank" rel="noreferrer">Visit site &#8594;</a>
+                            <a href="https://github.com/ThomasRoyProjects/csv-record-pipeline" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- 04 Fundraising Intelligence -->
-            <article class="project reveal">
+            <!-- Secondary Projects Header -->
+            <div class="projects-secondary-header reveal">
+                <p class="section-label">Additional Work</p>
+                <h3 class="secondary-title">Production Systems &amp; Tools</h3>
+            </div>
+
+            <!-- 04 TransparencyBC -->
+            <article class="project project-secondary reveal">
                 <div class="project-meta">
                     <span class="project-num">04</span>
                 </div>
                 <div class="project-layout project-layout-flip">
                     <div class="project-image-wrap">
-                        <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard" class="project-img">
+                        <img src="images/transparencybc_search.png" alt="TransparencyBC search interface static screenshot" class="project-img">
+                        <span class="project-image-tag project-tag-secondary">Case Study</span>
+                    </div>
+                    <div class="project-body">
+                        <h3 class="project-title">TransparencyBC</h3>
+                        <p class="project-desc">
+                            Search platform for British Columbia FOI releases, OIPC orders, and judicial reviews. Built with a decoupled Python (Flask) search API, chunked Typesense indexing, and signed PDF document streaming.
+                        </p>
+                        <ul class="project-list">
+                            <li>Commercial subscription application; architecture walkthrough and static screenshots from the project are presented in an open case study requiring no account</li>
+                            <li>Chunk-based Typesense search across indexed records with signed PDF streaming to a browser viewer</li>
+                        </ul>
+                        <p class="project-stack">Python (Flask) · Next.js · TypeScript · PostgreSQL · Typesense · Docker</p>
+                        <div class="project-links">
+                            <a href="transparencybc.html" class="project-link">Case Study &#8594;</a>
+                            <a href="https://transparencybc.com/" class="project-link" target="_blank" rel="noreferrer">Live Application &#8599;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- 05 Fundraising Intelligence -->
+            <article class="project project-secondary reveal">
+                <div class="project-meta">
+                    <span class="project-num">05</span>
+                </div>
+                <div class="project-layout">
+                    <div class="project-image-wrap">
+                        <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard preview" class="project-img">
+                        <span class="project-image-tag project-tag-secondary">Desktop Tool</span>
                     </div>
                     <div class="project-body">
                         <h3 class="project-title">Fundraising Intelligence</h3>
                         <p class="project-desc">
-                            Python dashboard for turning CRM exports into donor segments,
-                            contribution-limit checks, and follow-up lists.
+                            Desktop application built for local campaign operations to normalize CRM exports, evaluate historical contribution limits, and generate targeted donor follow-up lists.
                         </p>
                         <ul class="project-list">
-                            <li>Review giving patterns and recurring donors</li>
-                            <li>Build follow-up lists from exported data</li>
+                            <li>Normalizes donor contribution histories and flags potential donation limit thresholds</li>
+                            <li>Streamlit interface bundled with Electron for cross-platform local desktop execution</li>
                         </ul>
-                        <p class="project-stack">Python · Streamlit · Electron</p>
+                        <p class="project-stack">Python · Streamlit · Electron · pandas</p>
                         <div class="project-links">
                             <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
@@ -231,34 +262,42 @@
                         <p class="stack-group-label">Languages</p>
                         <div class="stack-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">TypeScript</span>
                             <span class="tag">Java</span>
                             <span class="tag">SQL</span>
-                        </div>
-                    </div>
-                    <div class="stack-group">
-                        <p class="stack-group-label">Frontend</p>
-                        <div class="stack-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">Electron</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Liquid</span>
                         </div>
                     </div>
                     <div class="stack-group">
                         <p class="stack-group-label">Backend &amp; Data</p>
                         <div class="stack-tags">
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Typesense</span>
                             <span class="tag">Spring Boot</span>
+                            <span class="tag">Spring Security</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">JPA</span>
                             <span class="tag">pandas</span>
+                            <span class="tag">MySQL</span>
                         </div>
                     </div>
                     <div class="stack-group">
-                        <p class="stack-group-label">Infrastructure</p>
+                        <p class="stack-group-label">Tools &amp; Testing</p>
                         <div class="stack-tags">
-                            <span class="tag">Docker</span>
                             <span class="tag">Git</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Flyway</span>
+                            <span class="tag">JUnit / MockMvc</span>
+                            <span class="tag">pytest</span>
+                        </div>
+                    </div>
+                    <div class="stack-group">
+                        <p class="stack-group-label">Architecture &amp; Storage</p>
+                        <div class="stack-tags">
+                            <span class="tag">SQLCipher</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Typesense</span>
+                            <span class="tag">REST APIs</span>
                             <span class="tag">YAML</span>
                         </div>
                     </div>
