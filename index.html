@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Roy — Software Developer</title>
-    <meta name="description" content="Thomas Roy — Junior Software Developer. Java/Spring Boot backend development, Python data reconciliation, and local-first workflows.">
+    <meta name="description" content="Thomas Roy — Junior Software Developer. Java/Spring Boot development, Python data reconciliation, and campaign analytics tools.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
                     <h1 class="hero-name reveal" data-delay="80">Thomas<br>Roy</h1>
                     <p class="hero-desc reveal" data-delay="160">
                         Junior software developer focused on Java/Spring backend development,
-                        record reconciliation workflows, and local-first applications with automated tests.
+                        record reconciliation workflows, and practical analytics tools with automated tests.
                     </p>
                     <div class="hero-actions reveal" data-delay="240">
                         <a href="#work" class="btn btn-primary">Projects</a>
@@ -58,11 +58,11 @@
                     <div class="hero-feature-list">
                         <div>
                             <strong>Spring Boot</strong>
-                            <small>checkout · row locks · RBAC</small>
+                            <small>authentication · carts · tests</small>
                         </div>
                         <div>
-                            <strong>InboxBoard</strong>
-                            <small>IMAP triage · schemas · SQLCipher</small>
+                            <strong>Fundraising Intelligence</strong>
+                            <small>donor segments · local analysis</small>
                         </div>
                         <div>
                             <strong>CSV Pipeline</strong>
@@ -82,7 +82,7 @@
                     <h2 class="section-title">Current focus</h2>
                     <p>
                         I build robust backend systems, data reconciliation workflows,
-                        and local-first operational software designed for reliability,
+                        and practical analytics software designed for reliability,
                         data integrity, and rigorous testing.
                     </p>
                     <a href="resume/Thomas_Roy_Resume.pdf" class="project-link" target="_blank" rel="noreferrer">Open resume &#8594;</a>
@@ -91,7 +91,7 @@
                     <article class="resume-card reveal" data-delay="80">
                         <span class="resume-card-num">01</span>
                         <h3>Backend systems</h3>
-                        <p>Java/Spring Boot APIs, transactional checkout, pessimistic row locking, and integration tests.</p>
+                        <p>Java/Spring Boot applications with authentication, database-backed workflows, Docker, and integration tests.</p>
                     </article>
                     <article class="resume-card reveal" data-delay="160">
                         <span class="resume-card-num">02</span>
@@ -100,8 +100,8 @@
                     </article>
                     <article class="resume-card reveal" data-delay="240">
                         <span class="resume-card-num">03</span>
-                        <h3>Local-first tools</h3>
-                        <p>FastAPI services, SQLCipher encryption, and operational software without cloud dependencies.</p>
+                        <h3>Analytics tools</h3>
+                        <p>Python, pandas, and Streamlit dashboards for data cleaning, segmentation, and reporting.</p>
                     </article>
                 </div>
             </div>
@@ -125,42 +125,42 @@
                     <div class="project-body">
                         <h3 class="project-title">Spring Boot Webstore</h3>
                         <p class="project-desc">
-                            Full-stack Java/Spring Boot e-commerce application demonstrating transactional checkout integrity, role-based security, and automated testing pipelines.
+                            Server-rendered Java/Spring Boot webstore with customer and administrator authentication, database-backed product management, and automated tests.
                         </p>
                         <ul class="project-list">
-                            <li>Implemented transactional checkout with server-calculated prices, inventory row locks, and cart clearing after commit</li>
-                            <li>Added role-based access, Flyway migrations, and integration tests for price tampering and session isolation; automated tests and Docker builds in GitHub Actions</li>
+                            <li>Built customer registration, administrator product management, session-based carts, and transactional checkout</li>
+                            <li>Added Spring Security, Flyway migrations, Docker deployment, and integration tests</li>
                         </ul>
                         <p class="project-stack">Java 17 · Spring Boot · JPA · MySQL · Flyway · Docker · GitHub Actions</p>
                         <div class="project-links">
-                            <a href="https://github.com/ThomasRoyProjects/ExampleSpringbootWebstore" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
+                            <a href="https://github.com/ThomasRoyProjects/spring-boot-webstore" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
                     </div>
                 </div>
             </article>
 
-            <!-- 02 InboxBoard -->
+            <!-- 02 Fundraising Intelligence -->
             <article class="project reveal">
                 <div class="project-meta">
                     <span class="project-num">02</span>
                 </div>
                 <div class="project-layout project-layout-flip">
                     <div class="project-image-wrap">
-                        <img src="images/inboxboard_preview.svg" alt="InboxBoard email-to-kanban workflow diagram" class="project-img">
-                        <span class="project-image-tag project-tag-secondary">Workflow diagram</span>
+                        <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard preview" class="project-img">
+                        <span class="project-image-tag project-tag-secondary">Desktop Tool</span>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">InboxBoard — Email-to-Kanban Service Desk</h3>
+                        <h3 class="project-title">Fundraising Intelligence</h3>
                         <p class="project-desc">
-                            Local-first service desk application that turns inbound email into structured Kanban cards with automated intake routing and encrypted local persistence.
+                            Local desktop dashboard that transforms NationBuilder transaction exports into campaign fundraising analysis without uploading donor data.
                         </p>
                         <ul class="project-list">
-                            <li>Built an email-to-Kanban application with IMAP intake, a local FastAPI interface, and SQLCipher-encrypted storage</li>
-                            <li>Validated structured AI output against schemas and source evidence; routed high-risk or incomplete requests to human review</li>
+                            <li>Calculates revenue breakdowns, donor segments, contribution-limit checks, and outreach lists</li>
+                            <li>Uses a Streamlit interface, synthetic demonstration data, automated processing tests, and Electron desktop packaging</li>
                         </ul>
-                        <p class="project-stack">Python · FastAPI · Pydantic · SQLCipher · IMAP</p>
+                        <p class="project-stack">Python · Streamlit · pandas · Electron · unittest</p>
                         <div class="project-links">
-                            <a href="https://github.com/ThomasRoyProjects/ai-service-request-triage" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
+                            <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
                     </div>
                 </div>
@@ -178,13 +178,13 @@
                     <div class="project-body">
                         <h3 class="project-title">CSV Record Pipeline</h3>
                         <p class="project-desc">
-                            Multi-stage data pipeline for normalizing messy CSV exports, matching duplicate candidate records across fields, and generating review queues with conflict explanations.
+                            Configurable data pipeline for normalizing messy CSV exports, matching records across fields, and producing review-ready outputs.
                         </p>
                         <ul class="project-list">
-                            <li>Implemented indexed candidate matching, multi-field scoring, and unit-conflict checks with explanations and separate match/review outcomes</li>
-                            <li>Exposed YAML-configured jobs through CLI and local web interfaces; added end-to-end tests using 1,000-record synthetic fixtures</li>
+                            <li>Supports normalization, deduplication, matching, enrichment, scoring, and export workflows</li>
+                            <li>Exposes YAML-configured jobs through CLI and local web interfaces with automated tests and synthetic fixtures</li>
                         </ul>
-                        <p class="project-stack">Python · pandas · YAML · CLI &amp; Web UI · pytest</p>
+                        <p class="project-stack">Python · pandas · YAML · CLI &amp; Web UI · unittest</p>
                         <div class="project-links">
                             <a href="https://github.com/ThomasRoyProjects/csv-record-pipeline" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
                         </div>
@@ -226,32 +226,6 @@
                 </div>
             </article>
 
-            <!-- 05 Fundraising Intelligence -->
-            <article class="project project-secondary reveal">
-                <div class="project-meta">
-                    <span class="project-num">05</span>
-                </div>
-                <div class="project-layout">
-                    <div class="project-image-wrap">
-                        <img src="images/fundraising_dashboard_preview.png" alt="Fundraising Intelligence dashboard preview" class="project-img">
-                        <span class="project-image-tag project-tag-secondary">Desktop Tool</span>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Fundraising Intelligence</h3>
-                        <p class="project-desc">
-                            Desktop application built for local campaign operations to normalize CRM exports, evaluate historical contribution limits, and generate targeted donor follow-up lists.
-                        </p>
-                        <ul class="project-list">
-                            <li>Normalizes donor contribution histories and flags potential donation limit thresholds</li>
-                            <li>Streamlit interface bundled with Electron for cross-platform local desktop execution</li>
-                        </ul>
-                        <p class="project-stack">Python · Streamlit · Electron · pandas</p>
-                        <div class="project-links">
-                            <a href="https://github.com/ThomasRoyProjects/Fundraising_Intelligence" class="project-link" target="_blank" rel="noreferrer">Repository &#8594;</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
         </section>
 
         <!-- ── STACK ─────────────────────────────────────── -->
@@ -274,7 +248,7 @@
                         <div class="stack-tags">
                             <span class="tag">Spring Boot</span>
                             <span class="tag">Spring Security</span>
-                            <span class="tag">FastAPI</span>
+                            <span class="tag">Streamlit</span>
                             <span class="tag">JPA</span>
                             <span class="tag">pandas</span>
                             <span class="tag">MySQL</span>
@@ -288,13 +262,13 @@
                             <span class="tag">GitHub Actions</span>
                             <span class="tag">Flyway</span>
                             <span class="tag">JUnit / MockMvc</span>
-                            <span class="tag">pytest</span>
+                            <span class="tag">unittest</span>
                         </div>
                     </div>
                     <div class="stack-group">
                         <p class="stack-group-label">Architecture &amp; Storage</p>
                         <div class="stack-tags">
-                            <span class="tag">SQLCipher</span>
+                            <span class="tag">Electron</span>
                             <span class="tag">PostgreSQL</span>
                             <span class="tag">Typesense</span>
                             <span class="tag">REST APIs</span>
